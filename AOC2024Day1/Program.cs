@@ -9,7 +9,7 @@
 List<int> firstList = new List<int> ();
 List<int> secondList = new List<int> ();
 
-using (var reader = new StreamReader("input.txt"))
+using (var reader = new StreamReader("../../../../data/AOC2024Day1/input.txt"))
 {
     var content = reader.ReadToEnd().Split("\r\n").Select(a => a.Split(' ').Where(a => !string.IsNullOrWhiteSpace(a))).ToArray();
     foreach (var item in content)
